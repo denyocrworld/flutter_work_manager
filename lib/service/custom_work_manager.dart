@@ -1,6 +1,8 @@
 import 'dart:developer';
+import 'dart:io';
 
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:workmanager/workmanager.dart';
 
@@ -49,6 +51,7 @@ void callbackDispatcher() {
 
 class CustomWorkManager {
   static init() async {
+    if (!kIsWeb && Platform.isWindows) return;
     Workmanager().initialize(
         callbackDispatcher, // The top level function, aka callbackDispatcher
         isInDebugMode:
