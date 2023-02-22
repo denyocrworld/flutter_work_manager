@@ -1,16 +1,8 @@
-# flutter_work_manager
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Catatan Penting terkait Work Manager
+Catatan Penting terkait Work Manager
+1. Stop aplikasi-nya jika menambahkan action baru
+2. Uninstall aplikasi-nya jika tiba2 Work Manager-nya Stuck,
+lalu jalankan project Flutter-nya kembali
+3. Pastikan user sudah melalakukan request permission untuk location jika Action
+dari WorkManager-nya adalah meminta lokasi User
+4. Periodic Task-nya , hanya bisa berjalan minimal 15 menit sekali!
